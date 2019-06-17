@@ -1,0 +1,29 @@
+.header {
+  padding: 5px;
+  text-align: left;
+  background: grey;
+  color: white;
+  font-size: 20px;}
+
+h1 {
+  color: white;
+  font-family: 'Aguafina Script', cursive;
+}
+
+p {
+  color: lime;
+  text-decoration: underline;
+}
+.image1 {
+  max-width: 5px;
+  max-height: 20px;
+
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.box {
+
+}
