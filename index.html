@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./styles.css">
+<head>
+  <h1>Empowering Quotes</h1>
+</head>
+
+  <title>Random Quote Generator</title>
+<script>
+var quotes = Array('A girl should be two things: who and what she wants......Coco Chanel',
+'No one ever became a success without taking chances. One must be able to recognize the moment and seize it without delay......Estee Lauder',
+'Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness......Oprah Winfrey',
+'Women have to harness their power—it is absolutely true. It is just learning not to take the first no. And if you cannot go straight ahead, you go around the corner......Cher',
+'As women, we have to start appreciating our own worth and each others worth. Seek out strong women to befriend, to align yourself with, to learn from, to collaborate with, to be inspired by, to support, and enlightened by......Madonna',
+'I have learned that as long as I hold fast to my beliefs and values, and follow my own moral compass, then the only expectations I need to live up to are my own......Michelle Obama',
+'I think that passion is the secret ingredient that drives hard work and excellence......Kelly Ayotte',
+'We do not need magic to transform our world. We carry all of the power we need inside ourselves already......J.K. Rowling',
+'Feminism is not about making women strong. Women are already strong. It is about changing the way the world perceives that strength......G.D. Anderson',
+'Si se puede! (Yes we can!)......Dolores Huerta',
+'What you do makes a difference, and you have to decide what kind of difference you want to make......Jane Goodall',
+'Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning......Gloria Steinem');
+var Loadquotes= function(){
+    var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('quoteshere').innerHTML=newquotes;
+};
+</script>
+
+<body>
+
+<button id="getquotes" value="Quotes" onclick="Loadquotes();">Click Me!</button>
+<p id="quoteshere" ></p>
+
+</body>
+</html>
